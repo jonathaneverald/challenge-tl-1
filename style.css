@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  position: relative;
+}
+.topNav {
+  overflow: hidden;
+  background-color: black;
+  width: 100%;
+}
+.hamburger {
+  margin: 5px 10px 5px 10px;
+  float: left;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+.topNav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topNav a.split {
+  float: right;
+  background-color: black;
+}
+.navLogo {
+  max-height: 18px;
+}
+
+.topNav a:hover {
+  background-color: #a09696;
+  color: black;
+}
+
+.topNav a.active {
+  background-color: #242121;
+  color: white;
+}
+
+.item1 {
+  grid-area: item1;
+}
+.item2 {
+  grid-area: item2;
+}
+.item3 {
+  grid-area: item3;
+}
+.item4 {
+  grid-area: item4;
+}
+.item5 {
+  grid-area: item5;
+}
+.item6 {
+  grid-area: item6;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "item1 item2 item3 "
+    "item4 item5 item6 ";
+  /* gap: 10px;
+  background-color: #2196f3;
+  padding: 10px; */
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.footer {
+  text-align: center;
+  width: 100%;
+  padding: 30px;
+  background-color: black;
+}
+.footerLogo {
+  margin: auto;
+  max-width: 360px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.valveLogo {
+  margin: 0px 15px 20px 15px;
+  max-height: 30px;
+}
+.dotaLogo {
+  margin: 0px 15px 20px 15px;
+  max-height: 30px;
+}
+.copyright {
+  text-align: center;
+  color: white;
+}
